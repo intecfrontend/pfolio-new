@@ -6,6 +6,7 @@ import Nav from './components/Nav';
 import About from './components/About';
 import Services from './components/Services';
 import Work from './components/Work';
+import Loca from './components/Location';
 import Contact from './components/Contact';
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
       <About />
       <Services />
       <Work />
+      <Loca />
       <Contact />
       <div className='h-[4000px]'></div>
     </div>

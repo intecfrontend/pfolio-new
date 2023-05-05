@@ -13,7 +13,7 @@
   box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
 }
 
-.btn:hover {
+/* .btn:hover {
   background: linear-gradient(
     92.23deg,
     #406aff 21.43%,
@@ -32,14 +32,33 @@
     #b936ee 100%,
     #ff56f6 117.04%
   );
+} */
+.nav-link {
+  transition: all 1s ease-in-out;
+  opacity: 0.5;
+  border-radius: 50%;
+}
+
+.nav-link.active {
+  border-radius: 50%;
+
+  transform: scale(1.2);
+  opacity: 1;
 }
 
 .active {
+  background-color: orange !important;
+  opacity: 1;
   color: #fff;
   padding: 1rem;
   border-radius: 100%;
 }
-
+.inactive {
+  background-color: gold !important;
+  opacity: 0;
+  color: white;
+  transition: opacity 0.5s;
+}
 @layer base {
   body {
     @apply font-secondary text-lg leading-8 text-white;
