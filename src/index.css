@@ -1,7 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+.App {
+  min-height:900px;
+}
 .btn {
   background: linear-gradient(
     92.23deg,
@@ -13,10 +15,51 @@
   box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
 }
 
-.blinkerpic{
-  padding: 1vw;
-  border: red 2px solid
+@media only screen and (min-width: 1200px) {
+  .blinkertxt {
+    padding-left: 130px;
+  }
+  .blinker {
+    margin-left: 150px;
+    margin-top: 30px;
+  }
 }
+
+@media only screen and (max-width: 1200px) {
+  .blinkertxt {
+    padding-left: 50px;
+  }
+  .blinker {
+    margin-left: 60px;
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .blinkertxt {
+    padding-left: 18vw !important;
+    width: 88vw;
+    padding: 0px;
+  }
+  .blinker {
+    margin-left: 20vw;
+    margin-top: 0px;
+  }
+  .fotome {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .fotomeparent {
+    padding-bottom: 5vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+
 /* .btn:hover {
   background: linear-gradient(
     92.23deg,
