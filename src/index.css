@@ -2,19 +2,78 @@
 @tailwind components;
 @tailwind utilities;
 .App {
-  min-height:900px;
+  min-height: 900px;
+}
+.header {
+  /* border: 5px solid gold; */
+  padding: 5px;
+}
+#myButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50px;
+  left: calc(98vw - 150px);
+  position: absolute;
+  border: 1px solid white;
+  cursor: pointer;
+  background: rgba(0, 125, 203, 1);
+  width: 100px;
+  box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 1);
+  transition: box-shadow 0.2s;
+  border-radius: 5px;
+}
+#myButton:hover {
+  box-shadow: 0px 0.442184px 10.23px rgba(255, 86, 246, 1);
+  text-shadow: 0px 0.442184px 10.23px rgba(255, 86, 246, 1);
+}
+.text-color {
+  color: orange;
 }
 .btn {
-  background: linear-gradient(
+  /* background: linear-gradient(
     92.23deg,
     #ff56f6 21.43%,
     #b936ee 50.63%,
     #3bace2 100%,
     #406aff 117.04%
-  );
+  ); */
   box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
 }
+a {
+  display: flex;
+  flex-direction: column;
+}
+.active {
+}
+a:hover::after {
+  content: '';
+  display: block;
+  width: 70px;
+  height: 4px;
+  background-color: orange;
+  transform: scaleX(1);
+  transition: transform 500ms ease-in-out;
+}
+.active:hover::after {
+  display: none;
+}
 
+a::after {
+  content: '';
+  display: block;
+  width: 70px;
+  height: 4px;
+  background-color: transparent;
+  transform: scaleX(0);
+  transition: transform 500ms ease-in-out;
+  border-radius: 2px;
+  position: absolute;
+  top: 70px;
+}
+.active::after {
+  display: none;
+}
 @media only screen and (min-width: 1200px) {
   .blinkertxt {
     padding-left: 130px;
