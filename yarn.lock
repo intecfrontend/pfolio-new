@@ -1084,6 +1084,11 @@
   "resolved" "https://registry.npmjs.org/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz"
   "version" "0.2.3"
 
+"@csstools/convert-colors@^2.0.0":
+  "integrity" "sha512-P7BVvddsP2Wl5v3drJ3ArzpdfXMqoZ/oHOV/yFiGFb3JQr9Z9UXZ9tnHAKJsO89lfprR1F9ExW3Yij21EjEBIA=="
+  "resolved" "https://registry.npmjs.org/@csstools/convert-colors/-/convert-colors-2.0.0.tgz"
+  "version" "2.0.0"
+
 "@csstools/normalize.css@*":
   "integrity" "sha512-M0qqxAcwCsIVfpFQSlGN5XjXWu8l5JDZN+fPt1LeW5SZexQTgnaEvgXAY+CeygRw0EeppWHi12JxESWiWrB0Sg=="
   "resolved" "https://registry.npmjs.org/@csstools/normalize.css/-/normalize.css-12.0.0.tgz"
@@ -7706,7 +7711,7 @@
   dependencies:
     "prop-types" "^15.7.2"
 
-"react-countup@^6.4.0":
+"react-countup@^6.4.2":
   "integrity" "sha512-wdDrNb2lPFGbLb+i0FTgswPbWziubS6KZRII8NRpXmUCoZsi15PFbIHgBz60Dyxd4KPuRvwsK5aawIU4OPP3jA=="
   "resolved" "https://registry.npmjs.org/react-countup/-/react-countup-6.4.2.tgz"
   "version" "6.4.2"
@@ -7757,12 +7762,19 @@
   "resolved" "https://registry.npmjs.org/react-error-overlay/-/react-error-overlay-6.0.11.tgz"
   "version" "6.0.11"
 
+"react-icon-cloud@^4.1.4":
+  "integrity" "sha512-hc8yGNU98V6ObPdeNIt75M016xGMxbTWqB4l6exo1uwE5bvFU095unMbX2K3YBKYhGKEV3c7fSmq3jD3cRWX+A=="
+  "resolved" "https://registry.npmjs.org/react-icon-cloud/-/react-icon-cloud-4.1.4.tgz"
+  "version" "4.1.4"
+  dependencies:
+    "@csstools/convert-colors" "^2.0.0"
+
 "react-icons@^4.7.1":
   "integrity" "sha512-N6+kOLcihDiAnj5Czu637waJqSnwlMNROzVZMhfX68V/9bu9qHaMIJC4UdozWoOk57gahFCNHwVvWzm0MTzRjg=="
   "resolved" "https://registry.npmjs.org/react-icons/-/react-icons-4.8.0.tgz"
   "version" "4.8.0"
 
-"react-intersection-observer@^9.4.1":
+"react-intersection-observer@^9.4.3":
   "integrity" "sha512-WNRqMQvKpupr6MzecAQI0Pj0+JQong307knLP4g/nBex7kYfIaZsPpXaIhKHR+oV8z+goUbH9e10j6lGRnTzlQ=="
   "resolved" "https://registry.npmjs.org/react-intersection-observer/-/react-intersection-observer-9.4.3.tgz"
   "version" "9.4.3"
@@ -7870,7 +7882,7 @@
   "resolved" "https://registry.npmjs.org/react-type-animation/-/react-type-animation-2.1.2.tgz"
   "version" "2.1.2"
 
-"react@*", "react@^0.14.0 || ^15.0.0 || ^16 || ^17 || ^18", "react@^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^15.5.4 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^18.0.0", "react@^18.2.0", "react@>= 15.0.0", "react@>= 16", "react@>= 16.3.0", "react@>=16.8.6":
+"react@*", "react@^0.14.0 || ^15.0.0 || ^16 || ^17 || ^18", "react@^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^15.5.4 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^18.0.0", "react@^18.2.0", "react@>= 15.0.0", "react@>= 16", "react@>= 16.3.0", "react@>=16", "react@>=16.8.6":
   "integrity" "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   "version" "18.2.0"

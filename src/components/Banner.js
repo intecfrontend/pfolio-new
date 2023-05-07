@@ -7,15 +7,15 @@ import { fadeIn } from '../variants';
 import image from "../assets/beneface.jpg";
 
 const Banner = () => {
-  return <section className='section min-h-[85vh] lg:min-h-[78vh]' id='home'>
+  return <section className='section min-h-[45vh] lg:min-h-[38vh]' id='home'>
     <div className="container mx-auto flex flex-wrap items-center">
       <div className="order-2 lg:order-1 lg:w-2/3 lg:mb-0 mb-6">
         <div className="blinkertxt lg:ml-5 ml-3">
-          <h1 ><a className="titleName" target='blank' href="https://www.linkedin.com/in/benedikt-lantsoght-02481319/">Benedikt <span>&nbsp;Lantsoght&nbsp;</span>
-          
-          <FaLinkedin /> </a></h1> 
+          <motion.h1 variants={fadeIn('up', 0.3)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.7 }}><a className="titleName" target='blank' href="https://www.linkedin.com/in/benedikt-lantsoght-02481319/">Benedikt <span>&nbsp;Lantsoght&nbsp;</span>
+
+            <FaLinkedin /> </a></motion.h1>
         </div>
-        <div className="mb-6 text-[36px] lg:text-[60px]  noBlink">
+        <motion.div variants={fadeIn('up', 1)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className="mb-6 text-[36px] lg:text-[60px]  noBlink">
           <span>&nbsp;</span>
           <TypeAnimation
             className="blinker font-semibold text-color"
@@ -26,7 +26,7 @@ const Banner = () => {
             blink={false}
           />
 
-        </div>
+        </motion.div>
 
       </div>
       <div className="fotomeparent order-1 lg:order-2 lg:w-1/3">

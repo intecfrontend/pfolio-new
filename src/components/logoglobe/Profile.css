@@ -1,0 +1,13 @@
+.profile-cloud {
+  cursor: grab;
+  width: 50vw;
+  height: 50%;
+  display: flex;
+  align-items: center;
+display: flex; justify-content: center; }
+
+.profile-cloud:active {
+  cursor: grabbing;
+}
+
+
