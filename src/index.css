@@ -4,6 +4,15 @@
 .App {
   min-height: 900px;
 }
+.titleName {
+  display: flex;
+  flex-direction: row !important;
+  align-items: center;
+  transition: all 0.3s;
+}
+.titleName:hover {
+  color: orange;
+}
 .header {
   /* border: 5px solid gold; */
   padding: 5px;
@@ -49,7 +58,7 @@ a {
 }
 .active {
 }
-a:hover::after {
+.alink:hover::after {
   content: '';
   display: block;
   width: 70px;
