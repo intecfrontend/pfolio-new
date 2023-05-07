@@ -17,7 +17,7 @@ const Banner = () => {
           <span>&nbsp;</span>
           <TypeAnimation
             className="blinker font-semibold text-color"
-            sequence={['React Developer ', 2000, 'UX/UI Designer ', 1000, 'Multi(5)-Lingual ', 1000,  '0499 388 227 ', 1000]}
+            sequence={['React Developer ', 2000, 'UX/UI Designer ', 1000, 'Multi(5)-Lingual ', 1000,  'T. 0499 388 227 ', 1000]}
             speed={50}
             wrap='span'
             repeat={Infinity}
